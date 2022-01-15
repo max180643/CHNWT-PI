@@ -18,4 +18,4 @@ checkInternet() {
 checkInternet
 
 sudo docker pull jacobalberty/unifi:latest || error "Failed to pull lastest UniFi docker image!"
-sudo docker run -d --init --network=host --name unifi --restart=always -e TZ=Asia/Bangkok -e JVM_MAX_THREAD_STACK_SIZE=1280k -v ~/unifi:/unifi jacobalberty/unifi:latest || error "Failed to run UniFi docker image!"
+sudo docker run -d --init --network=host --name unifi --restart=always -e TZ=Asia/Bangkok -v ~/unifi:/unifi jacobalberty/unifi:latest || error "Failed to run UniFi docker image!"
