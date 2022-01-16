@@ -17,5 +17,5 @@ checkInternet() {
 
 checkInternet
 
-sudo docker pull linuxserver/librespeed:latest || error "Failed to pull lastest LibreSpeed docker image!"
-sudo docker run -d -p 8200:80 --name librespeed --restart=always -e PUID=1001 -e PGID=1001 -e TZ=Asia/Bangkok linuxserver/librespeed:latest || error "Failed to run LibreSpeed docker image!"
+sudo docker pull openspeedtest/latest:latest || error "Failed to pull lastest OpenSpeedTest docker image!"
+sudo docker run -d -p 8200:3000 -p 8201:3001 --name openspeedtest --restart=always openspeedtest/latest:latest || error "Failed to run OpenSpeedTest docker image!"
