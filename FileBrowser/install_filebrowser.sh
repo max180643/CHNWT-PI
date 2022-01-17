@@ -17,5 +17,5 @@ checkInternet() {
 
 checkInternet
 
-sudo docker pull filebrowser/filebrowser:s6 || error "Failed to pull lastest FileBrowser docker image!"
-sudo docker run -d -p 8300:80 --name filebrowser --restart=always -v ~/drive:/srv -v ~/filebrowser/filebrowser.db:/database/filebrowser.db -v ~/filebrowser/settings.json:/config/settings.json filebrowser/filebrowser:s6 || error "Failed to run FileBrowser docker image!"
+sudo docker pull filebrowser/filebrowser:latest || error "Failed to pull lastest FileBrowser docker image!"
+sudo docker run -d -p 8300:80 --name filebrowser --restart=always -e PUID=1001 -e PGID=1001 -v ~/drive:/srv -v ~/filebrowser/filebrowser.db:/database/filebrowser.db -v ~/filebrowser/settings.json:/config/settings.json filebrowser/filebrowser:latest || error "Failed to run FileBrowser docker image!"
