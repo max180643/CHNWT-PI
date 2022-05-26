@@ -1,5 +1,11 @@
 # CHNWT-PI
 
+## How to run the shell script file (.sh)
+
+```
+$ bash <name of file>.sh
+```
+
 ## List of port number already used
 
 | Application         | Port number                                                                                       |
