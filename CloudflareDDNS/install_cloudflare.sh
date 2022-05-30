@@ -18,4 +18,4 @@ checkInternet() {
 checkInternet
 
 sudo docker pull oznu/cloudflare-ddns:latest || error "Failed to pull lastest Cloudflare DDNS docker image!"
-sudo docker run -d --name cloudflare --restart=always -e PUID=1001 -e PGID=1001 -e API_KEY=xxxxxxx -e ZONE=example.com -e SUBDOMAIN=subdomain -e PROXIED=true oznu/cloudflare-ddns:latest || error "Failed to run Cloudflare DDNS docker image!"
+sudo docker run -d --name cloudflare --restart=always -e PUID=1000 -e PGID=1000 -e API_KEY=xxxxxxx -e ZONE=example.com -e SUBDOMAIN=subdomain -e PROXIED=true oznu/cloudflare-ddns:latest || error "Failed to run Cloudflare DDNS docker image!"

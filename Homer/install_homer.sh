@@ -18,4 +18,4 @@ checkInternet() {
 checkInternet
 
 sudo docker pull b4bz/homer:latest || error "Failed to pull lastest Homer docker image!"
-sudo docker run -d -p 8400:8080 --name homer --restart=always -e UID=1001 -e GID=1001 -v ~/homer/assets:/www/assets b4bz/homer:latest || error "Failed to run Homer docker image!"
+sudo docker run -d -p 8400:8080 --name homer --restart=always -e UID=1000 -e GID=1000 -v ~/homer/assets:/www/assets b4bz/homer:latest || error "Failed to run Homer docker image!"
