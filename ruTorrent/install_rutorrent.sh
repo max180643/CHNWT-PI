@@ -17,5 +17,5 @@ checkInternet() {
 
 checkInternet
 
-sudo docker pull linuxserver/rutorrent:arm32v7-latest || error "Failed to pull lastest ruTorrent docker image!"
+sudo docker pull linuxserver/rutorrent:arm64v8-latest || error "Failed to pull lastest ruTorrent docker image!"
 sudo docker run -d -p 8100:80 -p 5000:5000 -p 55639:55639 -p 6881:6881/udp --name rutorrent --restart=always -e USERID=1000 -e GROUPID=1000 -e TZ=Asia/Bangkok -v ~/rutorrent/config:/config -v ~/myTorrent/downloads:/downloads linuxserver/rutorrent:arm64v8-latest || error "Failed to run ruTorrent docker image!"
