@@ -1,0 +1,104 @@
+---
+title: "Dashboard"
+subtitle: "CHNWT-PI"
+logo: "logo.png"
+
+header: false
+footer: false
+
+stylesheet:
+  - "assets/custom.css"
+
+columns: "3" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+theme: default
+colors:
+  light:
+    highlight-primary: "#fff5f2"
+    highlight-secondary: "#fff5f2"
+    highlight-hover: "#bebebe"
+    background: "#12152B"
+    card-background: "#fff5f2"
+    text: "#ffffff"
+    text-header: "#fafafa"
+    text-title: "#000000"
+    text-subtitle: "#111111"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#3273dc"
+    link-hover: "#2e4053"
+    background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "#181C3A"
+    text: "#eaeaea"
+    text-header: "#7C71DD"
+    text-title: "#fafafa"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#c1c1c1"
+    link-hover: "#fafafa"
+    background-image: "../assets/wallpaper.jpeg"
+
+services:
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items:
+      - name: "ruTorrent"
+        logo: "assets/icons/rutorrent.png"
+        subtitle: "BitTorrent Client"
+        tag: "app"
+        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        url: "http://chnwtpi.local:8100/"
+        target: "_blank"
+      - name: "Homebridge"
+        logo: "assets/icons/homebridge.png"
+        subtitle: "iOS HomeKit API"
+        tag: "app"
+        tagstyle: "is-primary"
+        url: "http://chnwtpi.local:8500/"
+        target: "_blank"
+
+  - name: "Tools"
+    icon: "fas fa-tools"
+    items:
+      - name: "Portainer"
+        logo: "assets/icons/portainer.png"
+        subtitle: "Container Management System"
+        tag: "tool"
+        tagstyle: "is-success"
+        url: "https://chnwtpi.local:9443/"
+        target: "_blank"
+      - name: "File Browser"
+        logo: "assets/icons/filebrowser.png"
+        subtitle: "Web File Browser"
+        tag: "tool"
+        tagstyle: "is-success"
+        url: "http://chnwtpi.local:8300/"
+        target: "_blank"
+
+  - name: "Networking"
+    icon: "fas fa-network-wired"
+    items:
+      - name: "Nginx Proxy Manager"
+        logo: "assets/icons/nginxproxy.png"
+        subtitle: "Reverse Proxy Management System"
+        tag: "network"
+        tagstyle: "is-info"
+        url: "http://chnwtpi.local:81/"
+        target: "_blank"
+      - name: "UniFi Controller"
+        logo: "assets/icons/unifi.png"
+        subtitle: "Wireless Network Management"
+        tag: "network"
+        tagstyle: "is-info"
+        url: "https://chnwtpi.local:8443/"
+        target: "_blank"
+      - name: "OpenSpeedTest"
+        logo: "assets/icons/openspeedtest.png"
+        subtitle: "Local Internet Speed Test"
+        tag: "network"
+        tagstyle: "is-info"
+        url: "http://chnwtpi.local:8200/"
+        target: "_blank"
