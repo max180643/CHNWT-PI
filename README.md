@@ -14,6 +14,7 @@ $ bash <name of file>.sh
 | Samba               | 139, 445                                                                                          |
 | Portainer           | 8000, 9443 (Web UI)                                                                               |
 | ruTorrent           | 8100 (Web UI), 5000, 55639, 6881/udp                                                              |
+| qBittorrent         | 8110 (Web UI), 6882, 6882/udp                                                                     |
 | OpenSpeedTest       | 8200 (Web UI)                                                                                     |
 | File Browser        | 8300 (Web UI)                                                                                     |
 | Homer               | 8400 (Web UI)                                                                                     |
